@@ -16,7 +16,6 @@ import com.example.taskquantamitinnovations.services.PublishedModel
 class MainVM(application: Application) : AndroidViewModel(application) {
 
     var model: MutableLiveData<MutableList<PublishedModel>> = MutableLiveData()
-    lateinit var publishedRepo : PublishedRepository
 
     fun getData(context:Context) {
         val activity = context as? MainActivity
